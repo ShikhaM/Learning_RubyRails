@@ -1,0 +1,12 @@
+Creating blog
+rails new blog
+cd blog
+
+rails generate scaffold post title:string body:text
+rails generate scaffold comment post_id:integer body:text
+rake db:migrate
+rake routes
+rails server
+
+In a web browser, type:
+localhost:3000/posts#index
